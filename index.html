@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Natasha | Web Developer Portfolio</title>
+<style>
+:root{--bg:#ffffff;--soft:#f4f2ff;--ink:#1b1740;--mute:#5d5a80;--brand:#3b2fa0;--brand2:#6d4aff;--line:#e3dfff;--card:#ffffff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12102b;--soft:#1b1840;--ink:#f1efff;--mute:#b3afdd;--line:#2f2a6b;--card:#1b1840}}
+:root[data-theme="dark"]{--bg:#12102b;--soft:#1b1840;--ink:#f1efff;--mute:#b3afdd;--line:#2f2a6b;--card:#1b1840}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font-family:"Segoe UI",system-ui,-apple-system,Arial,sans-serif;line-height:1.6}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 20px;flex-wrap:wrap}
+.logo{font-weight:800;color:var(--brand2);font-size:1.2rem}
+nav{display:flex;gap:4px;overflow-x:auto}
+nav a{color:var(--mute);text-decoration:none;padding:8px 12px;border-radius:999px;font-size:.92rem;white-space:nowrap;transition:.2s}
+nav a:hover{background:var(--soft);color:var(--ink)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--brand2);outline-offset:2px}
+.hero{text-align:center;padding:64px 20px;background:linear-gradient(135deg,#2a1f7a,#6d4aff);color:#fff;animation:in .6s ease}
+@keyframes in{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hero{animation:none}html{scroll-behavior:auto}}
+.av{width:96px;height:96px;border-radius:50%;background:#fff;color:var(--brand2);display:grid;place-items:center;font-size:2.8rem;font-weight:800;margin:0 auto 14px}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.15}
+.hero .role{font-size:1.15rem;opacity:.95;margin:6px 0 22px}
+.btn{display:inline-block;background:#fff;color:var(--brand);font-weight:700;text-decoration:none;padding:12px 26px;border-radius:999px;margin:4px;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,.2)}
+.btn.line{background:transparent;color:#fff;border:2px solid #fff}
+.btn.solid{background:var(--brand);color:#fff}
+section{max-width:1000px;margin:0 auto;padding:46px 20px}
+h2{text-align:center;font-size:clamp(1.6rem,4vw,2.2rem);color:var(--brand2);margin-bottom:6px}
+.sub{text-align:center;color:var(--mute);margin-bottom:26px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;transition:.2s}
+.card:hover{transform:translateY(-4px);border-color:var(--brand2);box-shadow:0 10px 24px rgba(109,74,255,.15)}
+.card .ic{font-size:2rem;display:block;margin-bottom:6px}
+.card h3{font-size:1.1rem;margin-bottom:4px}
+.card p{color:var(--mute);font-size:.95rem;margin-bottom:10px}
+.card a{color:var(--brand2);font-weight:700;text-decoration:none}
+.about{background:var(--soft);border-radius:24px;text-align:center;padding:40px 22px}
+.about p{max-width:620px;margin:0 auto 14px;color:var(--mute)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
+.chips span{background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:.9rem}
+.cta{text-align:center}
+footer{text-align:center;color:var(--mute);padding:24px;border-top:1px solid var(--line);font-size:.9rem}
+</style>
+</head>
+<body>
+<header><div class="logo">Natasha</div>
+<nav><a href="#about">About</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav></header>
+
+<div class="hero">
+  <div class="av">N</div>
+  <h1>Hi, I'm Natasha</h1>
+  <p class="role">Web Developer &amp; Freelancer</p>
+  <a class="btn" href="#projects">View My Work</a>
+  <a class="btn line" href="#contact">Hire Me</a>
+</div>
+
+<section id="about">
+  <div class="about">
+    <h2>About Me</h2>
+    <p>I build clean, mobile-friendly websites and simple web apps for small businesses, and I also help with MS Word and Excel work. I care about fast delivery, clear communication and designs that look good on every phone.</p>
+    <div class="chips"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive Design</span><span>MS Word</span><span>MS Excel</span></div>
+  </div>
+</section>
+
+<section id="services">
+  <h2>Services</h2>
+  <p class="sub">What I can do for you</p>
+  <div class="grid">
+    <div class="card"><span class="ic">🌐</span><h3>Business Websites</h3><p>Restaurants, shops, salons and personal portfolios.</p></div>
+    <div class="card"><span class="ic">📱</span><h3>Mobile-Friendly Web Apps</h3><p>Simple apps that work in the browser and install on the home screen.</p></div>
+    <div class="card"><span class="ic">📄</span><h3>MS Word &amp; Excel</h3><p>Assignments, formatting, tables, formulas and reports.</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <p class="sub">Sample projects I have built</p>
+  <div class="grid">
+    <div class="card"><span class="ic">💼</span><h3>FreelanceStart</h3><p>A 7-page beginner guide to freelancing with a modern purple theme.</p><a href="https://natashakanwal755-lang.github.io/freelancestart/" target="_blank" rel="noopener">View live →</a></div>
+    <div class="card"><span class="ic">🍛</span><h3>Spice Garden</h3><p>Sample restaurant website with menu, timings and a WhatsApp order button.</p><a href="https://natashakanwal755-lang.github.io/restaurant-sample/" target="_blank" rel="noopener">View live →</a></div>
+    <div class="card"><span class="ic">🐾</span><h3>Fun with Animals</h3><p>Kids learning app with animal sounds and a quiz. Installable on the phone.</p><a href="https://natashakanwal755-lang.github.io/animals-app-/" target="_blank" rel="noopener">View live →</a></div>
+  </div>
+</section>
+
+<section id="contact" class="cta">
+  <h2>Let's Work Together</h2>
+  <p class="sub">Tell me about your project and I will reply soon.</p>
+  <a class="btn solid" href="https://www.fiverr.com/YOUR_FIVERR_USERNAME" target="_blank" rel="noopener">Order on Fiverr</a>
+  <a class="btn solid" href="https://wa.me/92300XXXXXXX" target="_blank" rel="noopener">WhatsApp Me</a>
+  <p style="margin-top:14px;color:var(--mute)">Email: your-email@gmail.com</p>
+</section>
+
+<footer>© 2026 Natasha. All rights reserved.</footer>
+</body>
+</html>
